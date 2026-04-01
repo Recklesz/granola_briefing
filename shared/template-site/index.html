@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Briefing</title>
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">Daily briefing</p>
+          <h1 id="title">Loading…</h1>
+          <p id="subtitle" class="subtitle"></p>
+        </div>
+        <div class="meta-card">
+          <div>
+            <span class="label">Generated</span>
+            <strong id="generatedAt"></strong>
+          </div>
+          <div>
+            <span class="label">Meetings</span>
+            <strong id="meetingCount"></strong>
+          </div>
+        </div>
+      </header>
+
+      <section class="summary card">
+        <h2>Morning scan</h2>
+        <p id="summaryText"></p>
+      </section>
+
+      <section>
+        <div class="section-header">
+          <h2>Today’s meetings</h2>
+        </div>
+        <div id="meetings" class="meeting-list"></div>
+      </section>
+    </main>
+
+    <script src="./assets/app.js"></script>
+  </body>
+</html>
