@@ -21,12 +21,13 @@ Before you start:
 - Use connected Google Calendar and Granola MCP when available.
 - Only pause for genuine manual blockers such as OAuth, connector approval, or account selection.
 - Prefer changing `data/briefing.json` over redesigning the page.
+- Build the JSON to match the editorial contract in `docs/common/template-contract.md`.
 
 ## Workflow
 
 1. Inspect today's meetings via Google Calendar. If the calendar tools are not available in the current session, use the `claude -p` subprocess workaround described in `docs/connectors/google-calendar.md`.
 2. Gather relevant Granola context.
-3. Build a structured JSON payload.
+3. Build a structured JSON payload that includes a short intro plus per-meeting headline, topic, person, context, prep notes, and links when available.
 4. Run `python3 scripts/generate_report.py --input <payload> --output <dir> --open` to copy the template, inline the data, and open in browser.
 5. Return a concise summary and the output location.
 

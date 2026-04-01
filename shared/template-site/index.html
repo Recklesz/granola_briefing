@@ -3,41 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daily Briefing</title>
+    <title>The Daily Brief</title>
     <link rel="stylesheet" href="./assets/styles.css" />
   </head>
   <body>
-    <main class="page">
-      <header class="hero">
-        <div>
-          <p class="eyebrow">Daily briefing</p>
-          <h1 id="title">Loading…</h1>
-          <p id="subtitle" class="subtitle"></p>
-        </div>
-        <div class="meta-card">
-          <div>
-            <span class="label">Generated</span>
-            <strong id="generatedAt"></strong>
-          </div>
-          <div>
-            <span class="label">Meetings</span>
-            <strong id="meetingCount"></strong>
-          </div>
-        </div>
-      </header>
+    <button id="aboutBadge" class="about-badge" type="button" aria-label="Open about dialog">
+      <img src="./assets/granola-logo.svg" alt="Granola" />
+    </button>
 
-      <section class="summary card">
-        <h2>Morning scan</h2>
-        <p id="summaryText"></p>
+    <nav class="topbar">
+      <div class="topbar-actions">
+        <button id="aboutButton" class="topbar-link" type="button">About</button>
+        <a class="topbar-cta" href="#briefingStart">Get your own</a>
+      </div>
+    </nav>
+
+    <header class="masthead">
+      <h1 class="brand">
+        <span class="brand-kicker">the</span>
+        <span id="title">daily brief</span>
+      </h1>
+    </header>
+
+    <main id="briefingStart" class="page">
+      <section class="hero-grid">
+        <div class="cover-card">
+          <div class="cover-art" aria-hidden="true">
+            <img
+              class="cover-image"
+              src="https://picsum.photos/seed/thedrift/1200/1200?grayscale"
+              alt=""
+              referrerpolicy="no-referrer"
+            />
+          </div>
+        </div>
+
+        <div class="issue-column">
+          <div class="issue-meta">
+            <p id="issueNumber" class="issue-number"></p>
+            <p id="issueDate" class="issue-date"></p>
+          </div>
+
+          <section class="toc-card">
+            <div class="toc-head">
+              <p class="section-kicker">From The Calendar</p>
+              <p id="generatedAt" class="generated-at"></p>
+            </div>
+            <p id="intro" class="intro-copy"></p>
+            <div id="tocList" class="toc-list"></div>
+          </section>
+        </div>
       </section>
 
-      <section>
-        <div class="section-header">
-          <h2>Today’s meetings</h2>
-        </div>
-        <div id="meetings" class="meeting-list"></div>
-      </section>
+      <div class="divider" aria-hidden="true"></div>
+
+      <section id="articles" class="article-list"></section>
     </main>
+
+    <div id="aboutModal" class="modal-shell hidden" role="dialog" aria-modal="true" aria-labelledby="aboutTitle">
+      <div id="modalBackdrop" class="modal-backdrop"></div>
+      <div class="modal-wrap">
+        <section class="modal-card">
+          <button id="closeModal" class="modal-close" type="button" aria-label="Close about dialog">×</button>
+          <h2 id="aboutTitle"></h2>
+          <p id="aboutBody" class="about-body"></p>
+          <div id="aboutCredit" class="about-credit"></div>
+        </section>
+      </div>
+    </div>
 
     <script src="./assets/app.js"></script>
   </body>

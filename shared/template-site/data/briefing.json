@@ -1,7 +1,12 @@
 {
-  "title": "Daily briefing",
-  "subtitle": "Template placeholder data",
-  "generatedAt": "Not generated yet",
-  "summary": "This is placeholder data. Replace this file with the real structured payload.",
+  "title": "daily brief",
+  "issue": "Issue 1",
+  "date": "APRIL 1, 2026",
+  "generatedAt": "2026-04-01 07:00",
+  "intro": "A concise editorial briefing for the meetings ahead.",
+  "about": {
+    "title": "A daily briefing for the meetings ahead.",
+    "body": "Synthesized from your calendar, your meeting memory, and the context you need before you walk into the room."
+  },
   "meetings": []
 }

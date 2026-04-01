@@ -40,7 +40,7 @@ Runtime is the thing that repeats every morning:
 
 - get today’s meetings
 - gather useful context
-- fill the report payload
+- fill the editorial report payload
 - render the page
 - deliver or save the result
 
@@ -49,6 +49,8 @@ Runtime lives mostly in:
 - `.claude/commands/daily-briefing.md`
 - `.claude/agents/daily-briefing.md`
 - `shared/template-site/`
+
+The current template is intentionally static and local-first. It is styled to feel editorial, but it still renders from plain JSON plus bundled HTML/CSS/JS instead of a React runtime.
 
 ## Future expansion
 

@@ -35,7 +35,7 @@ Read these files in order:
 - `.claude/skills/daily-briefing/SKILL.md` — main runtime skill
 - `.claude/agents/daily-briefing.md` — project subagent
 - `.claude/commands/daily-briefing.md` — compatibility fallback
-- `shared/template-site/` — bundled static report template
+- `shared/template-site/` — bundled editorial-style static report template
 - `scripts/generate_report.py` — local deterministic renderer
 - `examples/briefing.sample.json` — sample payload for testing
 
@@ -47,6 +47,8 @@ python3 -m http.server --directory dist/today 8000
 ```
 
 Then open `http://localhost:8000`.
+
+The generated output is a plain static site, so you can also open `dist/today/index.html` directly.
 
 ## Best first prompt for Claude Code
 

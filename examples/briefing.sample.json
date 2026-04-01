@@ -1,53 +1,69 @@
 {
-  "title": "Thursday briefing",
-  "subtitle": "4 meetings today · 2 worth extra prep",
+  "title": "daily brief",
+  "issue": "Issue 91",
+  "date": "APRIL 1, 2026",
   "generatedAt": "2026-04-01 07:00",
-  "summary": "Two external meetings need prep: one with Acme on procurement timing, one with Northstar where the last call ended with an open pricing question.",
+  "intro": "Two meetings need extra prep this morning: Acme still has a procurement thread open, and Northstar needs a clearer pricing reset before the conversation drifts.",
+  "about": {
+    "title": "A daily briefing to prepare you for the meetings ahead.",
+    "body": "Synthesized from your past conversations and background research conducted since you last spoke. Stay present while Granola works quietly in the background.",
+    "credit": {
+      "label": "Built for local daily briefing runs"
+    }
+  },
   "meetings": [
     {
-      "title": "Acme kickoff follow-up",
-      "time": "09:00",
-      "attendees": ["Alice Chen", "Tom Patel"],
-      "lastSpoke": "2026-03-18",
-      "suggestedOpener": "Good to reconnect — last time we ended on implementation timing, so I’d love to hear what changed since then.",
-      "openLoops": [
-        "You promised to send the revised implementation timeline.",
-        "Alice said procurement would review the order form this week."
-      ],
-      "talkingPoints": [
-        "Ask whether procurement has approved the updated order form.",
-        "Clarify the internal owner for rollout.",
-        "Confirm next milestone and date."
-      ],
-      "recentUpdates": [
-        "Acme announced a new operations lead on LinkedIn.",
-        "Their company blog mentioned an expansion into EMEA."
+      "id": "acme-kickoff-follow-up",
+      "headline": "Roadmap Alignment",
+      "topic": "Acme kickoff follow-up",
+      "time": "09:00 AM",
+      "duration": "45 min",
+      "person": {
+        "name": "Alice Chen",
+        "role": "VP of Operations",
+        "company": "Acme",
+        "bio": "Alice is driving the rollout internally and has been the most consistent advocate for moving quickly, but she gets cautious when procurement and implementation owners are not clearly lined up."
+      },
+      "context": "This conversation should close the loop on implementation timing and determine whether procurement has actually cleared the path. The last meeting ended with interest, but not yet enough operational certainty to lock a date.",
+      "prepNotes": [
+        "Start by confirming whether the revised implementation timeline was reviewed internally.",
+        "Ask directly whether procurement approved the updated order form or whether another stakeholder entered the process.",
+        "Push toward naming the rollout owner and landing a concrete next milestone before the call ends."
       ],
       "links": [
-        {"label": "Last Granola note", "url": "https://granola.so/example-note"},
-        {"label": "Company news", "url": "https://example.com/acme-news"}
+        {
+          "label": "Last Granola note",
+          "url": "https://granola.so/example-note"
+        },
+        {
+          "label": "Company news",
+          "url": "https://example.com/acme-news"
+        }
       ]
     },
     {
-      "title": "Northstar pricing discussion",
-      "time": "14:30",
-      "attendees": ["Maya Singh"],
-      "lastSpoke": "2026-03-27",
-      "suggestedOpener": "I wanted to circle back on the pricing thread from last week and see what landed internally.",
-      "openLoops": [
-        "Northstar wanted a cleaner explanation of annual versus quarterly pricing.",
-        "You said you would send a side-by-side pricing summary."
-      ],
-      "talkingPoints": [
-        "Check whether legal has any blockers.",
-        "Confirm preferred pricing structure.",
-        "Push toward a concrete next step."
-      ],
-      "recentUpdates": [
-        "No major public updates found."
+      "id": "northstar-pricing-discussion",
+      "headline": "Commercial Reset",
+      "topic": "Northstar pricing discussion",
+      "time": "02:30 PM",
+      "duration": "30 min",
+      "person": {
+        "name": "Maya Singh",
+        "role": "Finance Director",
+        "company": "Northstar",
+        "bio": "Maya is practical, detail-oriented, and usually receptive when the commercial logic is easy to explain in one pass. She tends to disengage when too many pricing scenarios are introduced at once."
+      },
+      "context": "The goal here is to simplify the pricing thread and remove ambiguity from the last call. Northstar did not push back on budget so much as on clarity, which means a cleaner framing could unlock a fast next step.",
+      "prepNotes": [
+        "Reframe annual versus quarterly pricing in plain language before discussing concessions.",
+        "Check whether legal surfaced any blockers after the last conversation.",
+        "End with a single recommended commercial path rather than presenting three options."
       ],
       "links": [
-        {"label": "Last Granola note", "url": "https://granola.so/example-note-2"}
+        {
+          "label": "Last Granola note",
+          "url": "https://granola.so/example-note-2"
+        }
       ]
     }
   ]
