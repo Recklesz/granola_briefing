@@ -1,0 +1,54 @@
+{
+  "title": "Thursday briefing",
+  "subtitle": "4 meetings today · 2 worth extra prep",
+  "generatedAt": "2026-04-01 07:00",
+  "summary": "Two external meetings need prep: one with Acme on procurement timing, one with Northstar where the last call ended with an open pricing question.",
+  "meetings": [
+    {
+      "title": "Acme kickoff follow-up",
+      "time": "09:00",
+      "attendees": ["Alice Chen", "Tom Patel"],
+      "lastSpoke": "2026-03-18",
+      "suggestedOpener": "Good to reconnect — last time we ended on implementation timing, so I’d love to hear what changed since then.",
+      "openLoops": [
+        "You promised to send the revised implementation timeline.",
+        "Alice said procurement would review the order form this week."
+      ],
+      "talkingPoints": [
+        "Ask whether procurement has approved the updated order form.",
+        "Clarify the internal owner for rollout.",
+        "Confirm next milestone and date."
+      ],
+      "recentUpdates": [
+        "Acme announced a new operations lead on LinkedIn.",
+        "Their company blog mentioned an expansion into EMEA."
+      ],
+      "links": [
+        {"label": "Last Granola note", "url": "https://granola.so/example-note"},
+        {"label": "Company news", "url": "https://example.com/acme-news"}
+      ]
+    },
+    {
+      "title": "Northstar pricing discussion",
+      "time": "14:30",
+      "attendees": ["Maya Singh"],
+      "lastSpoke": "2026-03-27",
+      "suggestedOpener": "I wanted to circle back on the pricing thread from last week and see what landed internally.",
+      "openLoops": [
+        "Northstar wanted a cleaner explanation of annual versus quarterly pricing.",
+        "You said you would send a side-by-side pricing summary."
+      ],
+      "talkingPoints": [
+        "Check whether legal has any blockers.",
+        "Confirm preferred pricing structure.",
+        "Push toward a concrete next step."
+      ],
+      "recentUpdates": [
+        "No major public updates found."
+      ],
+      "links": [
+        {"label": "Last Granola note", "url": "https://granola.so/example-note-2"}
+      ]
+    }
+  ]
+}
