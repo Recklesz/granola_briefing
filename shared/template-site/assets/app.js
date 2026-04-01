@@ -1,6 +1,11 @@
 async function loadBriefing() {
-  const res = await fetch('./data/briefing.json');
-  const data = await res.json();
+  let data;
+  if (window.__BRIEFING_DATA__) {
+    data = window.__BRIEFING_DATA__;
+  } else {
+    const res = await fetch('./data/briefing.json');
+    data = await res.json();
+  }
 
   document.getElementById('title').textContent = data.title;
   document.getElementById('subtitle').textContent = data.subtitle || '';

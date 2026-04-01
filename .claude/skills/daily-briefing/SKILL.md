@@ -24,13 +24,11 @@ Before you start:
 
 ## Workflow
 
-1. Inspect today's meetings.
+1. Inspect today's meetings via Google Calendar. If the calendar tools are not available in the current session, use the `claude -p` subprocess workaround described in `docs/connectors/google-calendar.md`.
 2. Gather relevant Granola context.
 3. Build a structured JSON payload.
-4. Copy `shared/template-site/` into the target output directory.
-5. Replace `data/briefing.json` in the output directory.
-6. Verify the page renders.
-7. Return a concise summary and the output location.
+4. Run `python3 scripts/generate_report.py --input <payload> --output <dir> --open` to copy the template, inline the data, and open in browser.
+5. Return a concise summary and the output location.
 
 ## Fallback
 
