@@ -10,30 +10,46 @@ This repo deliberately separates **one-time setup** from the **daily briefing ru
 4. `docs/connectors/granola.md`
 5. `docs/common/scheduling.md`
 
+## What Claude Code should do during setup
+
+Claude should handle setup as autonomously as possible.
+
+That means Claude should:
+
+- inspect the repo and linked setup docs itself,
+- build a setup checklist itself,
+- run command-line verification steps itself,
+- add the Granola MCP server itself,
+- verify both Google Calendar and Granola access itself,
+- run a local test briefing itself,
+- only stop when the user must do browser OAuth, approve a connector, restart Claude Code, or provide a secret.
+
 ## What the user should do first
 
-1. Install Claude Code.
-2. Connect Google Calendar.
-3. Connect Granola MCP.
-4. Open this repo in Claude Code.
-5. Ask Claude Code to inspect the setup docs and verify access.
-6. Run a manual test briefing.
-7. Once the test output looks good, ask Claude Code to schedule it for every weekday at 7:00 AM.
+1. Install Claude Code if it is not already installed.
+2. Open this repo in Claude Code.
+3. Ask Claude Code to run the setup flow.
 
-## Suggested first prompt to Claude Code
+## Best setup command
 
 ```text
-Read docs/SETUP.md and all linked setup files. Build a concrete checklist of what is already configured and what still needs setup for this daily briefing workflow. Then help me finish the missing setup steps one by one.
+/setup-briefing
 ```
 
-## Suggested verification prompt
+## Best direct prompt
 
 ```text
-Verify that Google Calendar and Granola MCP are both available in Claude Code for this repo. If either is missing, guide me through the exact missing step and wait for me to complete any OAuth flow.
+Read docs/SETUP.md and all linked setup files. Complete every setup step you can do yourself. Only stop when I must complete OAuth, approve a connector, restart Claude Code, or provide a secret. After each user-required step, continue automatically, verify the setup, run a local test briefing from examples/briefing.sample.json, and then summarize what remains.
 ```
 
-## Suggested manual test prompt
+## Verification prompt
 
 ```text
-Use the daily-briefing subagent and the /daily-briefing project command to generate a local test briefing page from examples/briefing.sample.json. Do not redesign the template; only fill the data and render the page.
+Verify that Google Calendar and Granola MCP are both available in Claude Code for this repo. If either is missing, complete every step you can yourself and ask me only for the exact browser or account action I need to take.
+```
+
+## Manual test prompt
+
+```text
+Use the daily-briefing subagent to generate a local test briefing page from examples/briefing.sample.json. Do not redesign the template; only fill the data and render the page to dist/today.
 ```
